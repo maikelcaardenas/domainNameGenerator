@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Domain Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd; box-shadow: 0px 1px 20px grey;">
+        <div class="container-fluid">
+            <a class="navbar-brand"> <img src="https://www.iconpacks.net/icons/2/free-domain-name-icon-2373-thumb.png"
+                    alt="" class="imagen"></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <!-- DROPDOWN -->
+            <form class="d-flex" role="search">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle mx-2" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"> <svg style="width: 20px; height: 20px; fill: white;"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item border-3 link-active" style="color: red;" href="#">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <!-- content -->
+    <div class="content container-fluid ">
+        <h1 class="justify-content-center align-items-center d-flex">Domain Name Generator</h1>
+        <div class="input-group mb-3">
+            <div class="form-container">
+                <input id="domain" type="text" readonly class="form-control input-field" placeholder="Here a New Domain"
+                    aria-label="Recipient's username" aria-describedby="button-addon2" style="width: 25rem;">
+                <button id="button_GEX" class="btn btn-outline-light btn-lg submit-button" type="button"
+                    id="button-addon2" onclick="domain_name_generator()">Create a
+                    New Domain </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle container-fluid d-flex justify-content-between">
+        <div class="content-box">
+            <h3>World Wide Web</h3>
+            <p>Make the most creative domain names using our tool. You will see, is the most easy thing.</p>
+        </div>
+        <div class="content-box">
+            <h3>Win some prices using this website</h3>
+            <p>You will get some regards using this incredible domain creator.</p>
+        </div>
+    </div>
+
+    <div id="informacion" class="container-fluid d-flex align-items-center">
+        <div>
+            <img class="info" src="https://www.isitwp.com/wp-content/uploads/2018/09/domainnamegenerator.png"
+                alt="Domain Name Generator">
+        </div>
+        <div class="text-content">
+            <h3>The Most Easy Creator Tool</h3>
+            <p>We know that your time is valuable, that's why we created this tool to make your work easier and faster.
+                With this domain creator you will only need a few minutes to complete this request. Subscribe to our
+                website and get more benefits as a pro user</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="test.js"></script>
+</body>
+
+</html>
